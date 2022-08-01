@@ -1,0 +1,86 @@
+﻿<div class="modal fade " id="modal-review-dialog" tabindex="-1" role="dialog"
+     aria-labelledby="demoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body py-sm-3 px-sm-4" id="spdk-submisison-form">
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="text-center pt-3">
+                    <img src="https://img.icons8.com/color/100/000000/wedding-gift.png" height="100" id="spbk-review-logo">
+                    <h4 id="spbk-review-headline">We would love to hear from you!</h4>
+                </div>
+                <form id="sb-new-review-form" action="https://springback-io.conveyor.cloud/reviews/create" class="spingback-needs-validation" novalidate>
+                    <input type="hidden" id="spbk-ref-code" name="ReferralCode" />
+                    <input type="hidden" id="spbk-thirdPartyId" name="ThirdPartyId" />
+                    <input type="hidden" id="spbk-imageUrl" name="ImageUrl" />
+                    <input type="hidden" id="spbk-profileSource" name="ProfileSource" />
+                    <input type="hidden" id="spbk-emailInput" name="email" />
+                    <input type="hidden" id="spbk-nameInput" name="name" />
+
+                    <div class="form-group d-flex justify-content-center">
+                        <fieldset class="spbk-rating-input">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                            <input type="radio" id="star1" name="rating" value="1" required /><label for="star1" title="Sucks big time">1 star</label>
+                        </fieldset>
+                        <div class="invalid-feedback">
+                            Please select a rating
+                        </div>
+                    </div>
+                    <!--<div class="form-group">
+        <input type="text" class="form-control" name="name" id="spbk-nameInput" aria-describedby="nameHelp" placeholder="Your name" autofocus required>
+        <div class="invalid-feedback">
+            Your name
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" id="spbk-emailInput" aria-describedby="emailHelp" placeholder="Your email" required>
+        <div class="invalid-feedback">
+            Your email
+        </div>
+    </div>-->
+                    <div class="d-flex flex-row">
+                        <div class="p-2"><div class="text-muted">Rate us and we may create a quick testmonial. <b>Keep it if you like</b> or feel free to change!</div></div>
+                        <div class="p-2"><a href="#" id="spbk-review-refresh"><img src="https://springback-io.conveyor.cloud/widgets/websitereview/refresh-30.png" style="width:20px;height:20px;bottom:5px;"></a></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="spbk-review" name="review" placeholder="Write your testimonial" rows="5" cols="5" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a review comment
+                        </div>
+                    </div>
+                    <div class="text-center" id="spbk-review-loader-d916a6f0-f316-4702-b5b7-5ee08a27a6ea">
+                        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <button id="sb-btn-submit-review" type="button" class="btn btn-cstm-dark btn-cta">Submit Review</button>
+                </form>
+                <div class="pt-3 text-right">
+                    <small class=" text-muted"><a class="text-muted" target="_blank" href="https://icons8.com/icon/17380/wedding-gift">Privacy Policy</a></small>
+                </div>
+
+            </div>
+
+            <div class="container-fluid d-none" id="spdk-thankyou-panel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                <div class="row">
+                    <div class="col-md-12 py-5 px-sm-5">
+                        <div class="alert" role="alert">
+                            <h4 class="alert-heading" id="spbk-thankyou-heading">Thank you for being awesome!</h4>
+                            <p id="spbk-thankyou-desc">Aww yeah! We got your feedback. Our team will get in touch with you soon.</p>
+                        </div>
+                        <input type="button" value="Close" id="spbk-btn-review-close" class="btn btn-dark btn-block btn-cta dismiss" aria-label="Close" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal Ends -->
+<div class="modal-backdrop fade" id="sb-modal-background"></div>

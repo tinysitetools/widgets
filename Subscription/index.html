@@ -1,0 +1,61 @@
+﻿<div class="modal fade show" id="modal-subscription-dialog" tabindex="-1" role="dialog" 
+     aria-labelledby="modal-subscription-dialog" aria-modal="true"  style="position:relative;z-index:1;">
+    <div class="modal-dialog modal-dialog-wgt-subscription" role="document">
+        <div class="modal-content">
+            <!--<button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>-->
+            <div class="modal-body" id="spbk-subscription-panel" style="border:3px solid black;">
+                <div class="py-sm-4 py-2 text-center">
+                    <h2 class="pt-sm-3" id="spbk-subs-heading">Join our Mailing List</h2>
+                    <p class="text-black-50" id="spbk-subs-subheading">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                     <form action="https://springback-io.conveyor.cloud/subscriptions/create" id="spbk-subscribe-form" name="sb-subscribe-form" method="post">                  
+
+                        <div class="form-row justify-content-center align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="Name">Name</label>
+                                <input type="text" class="mb-2 form-control" name="name" id="spbk-subs-nameInput" aria-describedby="nameHelp" placeholder="Name" autofocus required>
+                                <div class="invalid-feedback">
+                                    Please provide your name
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="Email">Email</label>
+                                <input type="email" class="mb-2 form-control" name="email" id="spbk-subs-emailInput" aria-describedby="emailHelp" placeholder="mail@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please provide you email
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button"  id="spbk-btn-Subscribe" class="btn btn-cstm-danger btn-cstm-lg mb-2" >Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center align-items-center" id="spbk-ge-captcha-container">
+                            <div class="col-auto">
+                                <div class="g-recaptcha" data-sitekey="6LdZgQYgAAAAADkT_Spy6RjI3sNP0kVkyOBFijii" data-action='login'></div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="container-fluid d-none" id="spbk-subs-thankyou-panel" style="border:3px solid black;">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>-->
+                <div class="row">
+                    <div class="col-md-12 py-5 px-sm-5">
+                        <div class="alert alert-light" role="alert">
+                            <h4 class="alert-heading" id="spbk-subs-thankyou-heading">Thank you for being awesome!</h4>
+                            <p id="spbk-subs-thankyou-desc">Our newsletter will reach you soon. You will love it!</p>
+                        </div>
+                        <!--<input type="button" value="Close" id="spbk-btn-subs-close" class="btn btn-dark btn-block btn-cta dismiss" aria-label="Close">-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop fade" id="sb-modal-background"></div>
