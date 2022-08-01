@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35 32">
+  <defs>
+    <clipPath id="clip-green-tick">
+      <rect width="35" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="green-tick" clip-path="url(#clip-green-tick)">
+    <rect width="35" height="32" fill="transparent"/>
+    <g id="Group_16698" data-name="Group 16698" transform="translate(-990 -416)">
+      <path id="Path_31575" data-name="Path 31575" d="M9,0A9,9,0,1,1,0,9,9,9,0,0,1,9,0Z" transform="translate(999 423)" fill="#0069FF"/>
+      <path id="Union_61" data-name="Union 61" d="M-16120,39l-4.333,7Zm-7,3.91,2.667,3.091Z" transform="translate(17131.5 389.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
