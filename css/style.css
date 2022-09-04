@@ -1,4 +1,4 @@
-﻿.springback-iso-d3dccc5e {
+.springback-iso-d3dccc5e {
     /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -12208,7 +12208,7 @@
    it doesn’t make the test unnecessarily selective */
     .springback-iso-d3dccc5e .spbk-rating-input:not(:checked) > input {
         position: absolute;
-        top: -9999px;
+        visibility:hidden;
         clip: rect(0, 0, 0, 0);
     }
 
