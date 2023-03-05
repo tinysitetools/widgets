@@ -75,6 +75,10 @@
     background-color: #fff;
 }
 
+    .springback-iso-d3dccc5e form {
+        display: inline;
+    }
+
     .springback-iso-d3dccc5e [tabindex="-1"]:focus:not(:focus-visible) {
         outline: 0 !important;
     }
