@@ -1,4 +1,4 @@
-﻿var __io_TstInit = __io_TstInit || (function () {
+var __io_TstInit = __io_TstInit || (function () {
 
     // Localize jQuery variable
     var jQuery;
@@ -50,7 +50,7 @@
 
     function captureFormSubmission() {
 
-        let formData = $(this).closest('form').serializeArray();
+        let formData = jQuery(this).closest('form').serializeArray();
         console.log(formData);
 
         jQuery.ajax({
